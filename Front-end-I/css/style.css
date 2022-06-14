@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;600&family=Open+Sans:wght@500&family=Work+Sans:wght@300;400&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    --card-color: #cccbca;
+    --base-color: #9e9a9a;
+    --title: 'Work Sans', sans-serif;
+    --subtitle:'Hind Siliguri', sans-serif;
+    --contents: 'Open Sans', sans-serif;
+
+}
+
+button{
+    cursor: pointer;
+    background: none ;
+    border: none;
+}
+
+html{
+    font-size: 18px;
+    
+}
+
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+
+    width: 100%;
+
+    background-color: var(--base-color);
+    padding: 10px;
+
+    gap:20px
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    font-family: var(--subtitle);
+    font-size: 2rem;
+}
+
+#icon{
+    height: 30px;
+}
+
+.menu{
+    display: none;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255)
+} 
+
+#destaque{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-image: url(/img/avenida-paulista-passeios-baratos.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    height: 80vh;
+   
+}
+
+#banner{   
+    color: azure;
+    -webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-color: #000;
+    
+    font-size: 1.5rem;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    
+    font-family: var(--subtitle);
+    font-weight: bold;
+
+}
+
+span{
+    color: gray;
+}
+
+p{
+    text-align: center;
+}
+
+
+.titles{       
+    background-color: var(--base-color);
+    font-family: var(--title);
+    padding: 10px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+   
+    margin: 20px;
+
+  
+    
+    flex-wrap: wrap; 
+    gap: 20px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    gap: 20px;
+
+    width: 335px;
+    height: 534px;
+    background-color: var(--card-color);
+  
+    border-radius: 16px;
+}
+
+.card__title{
+    font-family: var(--subtitle);
+}
+
+.card__img{
+    width: 300px;
+    height: 150px;
+    border-radius: 16px;
+}
+
+
+.card__content{
+    font-family: var(--contents);
+    margin: 10px;
+}
+
+
+.video{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+iframe{
+    width: 560px;
+    height: 325px;
+    align-self: center;
+    border-radius: 16px;
+}
+
+footer{
+    background-color: var(--base-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media (min-width: 1280px){
+    #botao-menu{
+        display: none;
+    }
+
+    .menu{
+        display: flex;
+        gap: 40px;
+        font-family: var(--title);
+        list-style: none;
+        margin-right: 20px;
+        
+    }
+   
+    iframe{
+        width: 950px;
+        height: 550px;
+    }
+}
